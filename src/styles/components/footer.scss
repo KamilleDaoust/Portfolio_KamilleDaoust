@@ -1,6 +1,9 @@
 .footer {
     background-color: var(--color-white);
     padding: 60px 120px;
+    @media (width < $breakpoint-md) {
+        padding: 30px 30px;
+    }
     .wrapper {
         display: flex;
         flex-direction: column;
@@ -14,6 +17,9 @@
             justify-content: center;
             align-items: center;
             gap: 5px;
+            @media (width < $breakpoint-md) {
+                text-align: center;
+            }
         }
         .action {
             display: flex;
@@ -34,6 +40,13 @@
                 align-items: center;
                 gap: 100px;
                 color: var(--color-black);
+                @media (width < $breakpoint-md) {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 24px;
+                }
                 .infos,
                 .sociaux {
                     display: flex;

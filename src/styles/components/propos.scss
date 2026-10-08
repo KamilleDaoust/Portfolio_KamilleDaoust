@@ -198,6 +198,9 @@
 .personnel {
     background-color: var(--color-white);
     padding: 60px 120px;
+    @media (width < $breakpoint-md) {
+        padding: 30px 30px;
+    }
     .wrapper {
         display: flex;
         flex-direction: column;
@@ -217,11 +220,20 @@
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 gap: 24px;
+                @media (width < $breakpoint-md) {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
                 .content {
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
                     gap: 25px;
+                    @media (width < $breakpoint-md) {
+                        align-items: center;
+                    }
                 }
                 ul {
                     margin: 0;
@@ -229,7 +241,7 @@
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
-                    gap: 25px;
+                    gap: 15px;
                     li {
                         list-style-type: none;
                         font-family: var(--font-text);
@@ -242,14 +254,24 @@
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 gap: 24px;
+                @media (width < $breakpoint-md) {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
 
                 .content {
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
                     align-items: flex-end;
-                    gap: 25px;
+                    gap: 15px;
                     order: 1;
+                    @media (width < $breakpoint-md) {
+                        align-items: center;
+                        order: 0;
+                    }
                 }
                 ul {
                     margin: 0;
@@ -258,7 +280,10 @@
                     flex-direction: column;
                     justify-content: center;
                     align-items: flex-end;
-                    gap: 25px;
+                    gap: 15px;
+                    @media (width < $breakpoint-md) {
+                        align-items: center;
+                    }
                     li {
                         list-style-type: none;
                         font-family: var(--font-text);
@@ -285,6 +310,9 @@
 .suite {
     background-color: var(--color-bg-primary);
     padding: 60px 120px;
+    @media (width < $breakpoint-md) {
+        padding: 30px 15px;
+    }
 
     .wrapper {
         display: flex;
@@ -292,6 +320,9 @@
         align-items: center;
         justify-content: center;
         gap: 60px;
+        @media (width < $breakpoint-md) {
+            gap: 25px;
+        }
 
         .content {
             display: flex;
