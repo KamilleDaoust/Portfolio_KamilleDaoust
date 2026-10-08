@@ -1,21 +1,30 @@
-.projects{
+.projects {
     background-color: var(--color-bg-primary);
     padding: 60px 120px;
 
-    .wrapper{
+    .wrapper {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 55px;
 
-        .grid-projects{
+        .projet-title {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            text-align: center;
+        }
+
+        .grid-projects {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-         
+
             gap: 34px;
 
-            .card{
+            .card {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -23,53 +32,50 @@
                 // width: 80%;
                 // justify-self: center;
                 background-color: var(--color-white);
-                }
+            }
 
-                
+            .content {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 24px;
 
-                .content{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    gap: 24px;
+                padding: 24px;
 
-                    padding: 24px;
-
-                    a{
-                        background-color: var(--color-primary);
-                        padding: 10px 20px;
-                        border-radius: 16px;
-                        &:hover{
-                            background-color: var(--color-bg-primary);
-                        }
+                a {
+                    background-color: var(--color-primary);
+                    padding: 10px 20px;
+                    border-radius: 16px;
+                    &:hover {
+                        background-color: var(--color-bg-primary);
                     }
-                }
-
-                .media{
-                    height: 100%;
-                    img{
-                        display: block;
-                        height: 100%;
-                        width: 100%;
-                        object-fit: cover;
-                    }
-                }
-
-                h3{
-                    color: var(--color-black);
-                    text-align: center;
-                }
-
-                p{
-                    color: var(--color-black);
-                    opacity: 50%;
-                    text-align: center;
                 }
             }
-            h1{
-                color: var(--color-white);
+
+            .media {
+                height: 100%;
+                img {
+                    display: block;
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            h3 {
+                color: var(--color-black);
+                text-align: center;
+            }
+
+            p {
+                color: var(--color-black);
+                opacity: 50%;
+                text-align: center;
             }
         }
+        h1 {
+            color: var(--color-black);
+        }
     }
-
+}

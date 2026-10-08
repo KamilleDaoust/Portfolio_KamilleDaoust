@@ -10,7 +10,39 @@
         justify-content: center;
         align-items: center;
         gap: 45px;
+        .content-suite {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
 
+            @media (width < $breakpoint-md) {
+                padding: 30px 15px;
+            }
+
+            .wrapper {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 60px;
+                @media (width < $breakpoint-md) {
+                    gap: 25px;
+                }
+
+                .content {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 32px;
+                    h3 {
+                        color: var(--color-black);
+                    }
+                }
+            }
+        }
         .foot-title {
             display: flex;
             flex-direction: column;

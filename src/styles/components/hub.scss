@@ -2,6 +2,8 @@
     background-color: var(--color-white);
     display: grid;
     grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
     gap: 65px;
 
     @media (width < $breakpoint-md) {
@@ -70,7 +72,7 @@
     }
     .media {
         background-color: var(--color-primary);
-        height: 90%;
+        height: 100%;
         img {
             display: block;
             height: 100%;
