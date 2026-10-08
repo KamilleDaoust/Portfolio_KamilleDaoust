@@ -112,18 +112,34 @@
 .professionnel {
     background-color: var(--color-bg-primary);
     padding: 60px 120px;
+    @media (width < $breakpoint-md) {
+        padding: 30px 30px;
+    }
     .wrapper {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 60px;
+        @media (width < $breakpoint-md) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
 
         .content {
             display: flex;
             justify-content: center;
             align-items: center;
             gap: 175px;
+            @media (width < $breakpoint-md) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 24px;
+            }
 
             .competences,
             .logiciels {
@@ -131,6 +147,9 @@
                 flex-direction: column;
                 justify-content: center;
                 gap: 25px;
+                @media (width < $breakpoint-md) {
+                    align-items: center;
+                }
 
                 color: var(--color-black);
 
@@ -139,9 +158,11 @@
                     padding: 0;
                     display: flex;
                     flex-direction: column;
-
                     justify-content: center;
                     gap: 25px;
+                    @media (width < $breakpoint-md) {
+                        align-items: center;
+                    }
                     li {
                         list-style-type: none;
                         font-family: var(--font-text);
@@ -152,8 +173,14 @@
             }
             .logiciels {
                 align-items: flex-end;
+                @media (width < $breakpoint-md) {
+                    align-items: center;
+                }
                 ul {
                     align-items: flex-end;
+                    @media (width < $breakpoint-md) {
+                        align-items: center;
+                    }
                 }
             }
         }
@@ -165,6 +192,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 15px;
+    text-align: center;
 }
 .personnel {
     background-color: var(--color-white);
