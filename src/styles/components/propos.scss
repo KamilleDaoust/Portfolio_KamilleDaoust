@@ -2,7 +2,7 @@
     background-color: var(--color-white);
     padding: 60px 120px;
     @media (width < $breakpoint-lg) {
-        padding: 30px 40px;
+        padding: 30px 30px;
     }
     .wrapper {
         display: flex;
@@ -72,10 +72,28 @@
                 gap: 12px;
 
                 color: var(--color-black);
+                @media (width < $breakpoint-lg) {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    h2 {
+                        text-align: center;
+                    }
+                    h3 {
+                        text-align: center;
+                    }
+                    p {
+                        text-align: center;
+                    }
+                }
             }
 
             .buttons {
                 width: 50%;
+                @media (width < $breakpoint-sm) {
+                    width: 100%;
+                }
             }
         }
         .media {
