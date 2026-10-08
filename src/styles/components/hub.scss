@@ -4,7 +4,7 @@
     grid-template-columns: 1fr 1fr;
     gap: 65px;
 
-    /* @media (width < $breakpoint-md) {
+    @media (width < $breakpoint-md) {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -17,8 +17,18 @@
             width: 50%;
             height: 50%;
             overflow: hidden;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            /*   img {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }*/
         }
-    }*/
+    }
     .wrapper {
         display: flex;
         flex-direction: column;
@@ -60,10 +70,10 @@
     }
     .media {
         background-color: var(--color-primary);
-
+        height: 90%;
         img {
             display: block;
-            height: 100vh;
+            height: 100%;
             width: 100%;
             object-fit: cover;
         }
