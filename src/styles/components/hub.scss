@@ -6,11 +6,14 @@
     align-items: center;
     gap: 65px;
 
+    padding: 60px 120px;
+
     @media (width < $breakpoint-md) {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        padding: 30px 30px;
 
         .media {
             border-radius: 100%;

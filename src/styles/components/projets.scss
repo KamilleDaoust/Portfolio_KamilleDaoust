@@ -8,6 +8,9 @@
     background-repeat: no-repeat;
     z-index: -1;
     padding: 60px 120px;
+    @media (width < $breakpoint-md) {
+      padding: 30px 15px;
+    }
 
     .wrapper {
         display: flex;

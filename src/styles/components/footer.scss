@@ -16,10 +16,9 @@
             align-items: center;
             justify-content: center;
             gap: 15px;
+            text-align: center;
 
-            @media (width < $breakpoint-md) {
-                padding: 30px 15px;
-            }
+
 
             .wrapper {
                 display: flex;

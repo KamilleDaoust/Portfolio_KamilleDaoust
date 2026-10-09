@@ -134,6 +134,10 @@
     // background-image: url(../../assets/images/vert-fond.png);
     width: 100%;
     min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
     background-image:
        /* linear-gradient(
@@ -194,7 +198,7 @@
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
-                    gap: 25px;
+                    gap: 15px;
                     @media (width < $breakpoint-md) {
                         align-items: center;
                     }
@@ -234,6 +238,10 @@
     background-image: url(../../assets/images/blanc-fond.png);
     width: 100%;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
     background-size: cover;
     background-position: center;
