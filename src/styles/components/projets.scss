@@ -25,11 +25,18 @@
             text-align: center;
         }
 
+
         .grid-projects {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-
             gap: 34px;
+            @media (width < $breakpoint-lg) {
+                grid-template-columns: 1fr 1fr;                    
+            }
+            @media (width < $breakpoint-sm) {
+                grid-template-columns:1fr;                    
+            }
+
 
             .card {
                 display: flex;
