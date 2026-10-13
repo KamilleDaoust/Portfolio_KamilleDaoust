@@ -1,7 +1,7 @@
 [data-scrolly='fromBottom'] {
     opacity: 0;
     transform: translateY(30px);
-    transition: all 1s ease;
+    transition: all 0.4s ease;
 }
 [data-scrolly='fromBottom'].is-active {
     
