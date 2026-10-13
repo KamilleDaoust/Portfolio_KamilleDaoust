@@ -1,0 +1,10 @@
+[data-scrolly='fromBottom'] {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 1s ease;
+}
+[data-scrolly='fromBottom'].is-active {
+    
+    opacity: 1;
+    transform: translateY(0);
+}

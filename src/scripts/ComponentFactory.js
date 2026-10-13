@@ -1,10 +1,15 @@
 import Scroller from './components/Scroller.js';
 import TextAnim from './components/TextAnim.js';
+import Scrolly from './components/Scrolly.js'
 
 export default class ComponentFactory {
   constructor() {
     this.componentInstances = [];
-    this.componentList = { TextAnim, Scroller };
+    this.componentList = { 
+      TextAnim, 
+      Scroller, 
+      Scrolly,
+     };
     this.init();
   }
   init() {

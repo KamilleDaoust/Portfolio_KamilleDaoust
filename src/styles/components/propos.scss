@@ -1,7 +1,6 @@
 .hero {
     background-image: url(../../assets/images/blanc-fond.png);
     width: 100%;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -133,7 +132,6 @@
 .professionnel {
     // background-image: url(../../assets/images/vert-fond.png);
     width: 100%;
-    min-height: 60vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -237,7 +235,6 @@
 .personnel {
     background-image: url(../../assets/images/blanc-fond.png);
     width: 100%;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
