@@ -93,6 +93,12 @@
         align-items: center;
         gap: 15px;
         padding: 0;
+        @media(width < $breakpoint-md){
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;   
+        }
 
         li {
             display: flex;
@@ -112,6 +118,13 @@
             display: flex;
             justify-content: center;
             align-items: center;
+
+            @media(width < $breakpoint-md){
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 0;
+            }
 
             &:hover {
                 background-color: var(--color-bg-primary);
