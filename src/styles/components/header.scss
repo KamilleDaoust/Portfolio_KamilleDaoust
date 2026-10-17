@@ -208,7 +208,7 @@
         align-items: center;
         justify-content: center;
         gap: 90px;
-        
+
     }
 
     .nav-is-active & {
@@ -235,9 +235,7 @@
         .nav-is-active & {
             transform: translateX(0);
 
-            .nav-primary__item:hover {
-                color: var(--steel-grey);
-            }
+
         }
 
         a {
@@ -291,14 +289,6 @@
                 background-color: var(--color-white);
                 transform: scaleX(0);
                 transition: 0.3s all;
-            }
-
-            &:hover {
-                text-decoration: none;
-                color: var(--primary-black);
-                &::before {
-                    transform: scaleX(1);
-                }
             }
         }
     }
