@@ -74,7 +74,15 @@ export default class Header {
     console.log('hey');
     const toggle = this.element.querySelector('.js-toggle');
     toggle.addEventListener('click', this.onToggleNav.bind(this));
-    console.log(toggle);
+    
+      const liens = this.element.querySelectorAll('a[href^="#"]');
+
+    liens.forEach((lien) => {
+    lien.addEventListener('click', () => {
+    this.html.classList.remove('nav-is-active');
+    });
+    });
+
   }
 
   onToggleNav() {
