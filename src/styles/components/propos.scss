@@ -39,33 +39,7 @@
             align-items: center;
             gap: 10px;
         }
-    }
-
-    .grille-contenu {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 75px;
-
-        @media (width < $breakpoint-lg) {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-
-            .media {
-                border-radius: 100%;
-                aspect-ratio: 1/1;
-                order: -1;
-                // width: 50%;
-                // height: 50%;
-                overflow: hidden;
-
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-        }
-
+   
         .content {
             display: flex;
             flex-direction: column;
@@ -108,7 +82,9 @@
                     }
                 }
             }
-
+            p{
+                text-align: center;
+            }
             .buttons {
                 width: 50%;
                 @media (width < $breakpoint-sm) {
@@ -116,17 +92,7 @@
                 }
             }
         }
-        .media {
-            background-color: var(--color-primary);
-            height: 90%;
-            img {
-                display: block;
-                height: 100%;
-                width: 100%;
-                object-fit: cover;
-            }
-        }
-    }
+ }
 }
 
 .professionnel {
@@ -361,6 +327,7 @@ p {
     font-family: var(--font-size-content);
     font-weight: 300;
     margin: 0;
+    text-align: center;
 }
 
 .bold {
